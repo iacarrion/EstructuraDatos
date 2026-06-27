@@ -1,29 +1,26 @@
 package ec.edu.puce;
 
-public class Pcientes {
+public class Pacientes {
     private String nombre;
     private String identificacion;
-    private String carrera;
+    private String peso;
+    private String altura;
 
-    public Estudiantes(String n, String i, String c) {
+    public Pacientes(String n, String i, String p, String a) {
         this.nombre = n;
         this.identificacion = i;
-        this.carrera = c;
+        this.peso = p;
+        this.altura = a;
     }
 
-    public void mostrarDatos() {
-        IO.println(String.format("El estidiante es: %s con identificaacion: %s\n" +
-                "Pertenece a la carrera: %s", nombre, identificacion, carrera));
+    public void mostrarDatos(){
+        IO.println(String.format("El Paciente es: %s con identificación: %s\n" +
+                "Peso: %s con altura: %s", nombre, identificacion, peso, altura));
+
+
     }
 
-    @Override
-    public String toString() {
-        return "Estudiantes{" +
-                "nombre='" + nombre + '\'' +
-                ", identificacion='" + identificacion + '\'' +
-                ", carrera='" + carrera + '\'' +
-                '}';
-    }
+
 
     public String getNombre() {
         return nombre;
@@ -41,13 +38,18 @@ public class Pcientes {
         this.identificacion = identificacion;
     }
 
-    public String getCarrera() {
-        return carrera;
+    public String getPeso() {
+        return peso;
     }
 
-    public void setCarrera(String carrera) {
-        this.carrera = carrera;
+    public void setPeso(String peso) {
+        this.peso = peso;
+    }
+    public String getAltura() {
+        return altura;
     }
 
+    public void setAltura(String altura) {
+        this.altura = altura;
+    }
 }
-

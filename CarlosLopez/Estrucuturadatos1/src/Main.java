@@ -1,28 +1,20 @@
-import ec.edu.puce.Estudiantes;
+import ec.edu.puce.Pacientes;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+Queue colaPacientes = new LinkedList();
 void main() {
 
-    Stack<Estudiantes> pilaEstudiantes = new Stack<>();
-
-    Estudiantes estudiantes =
-
-            new Estudiantes( "pablo", "1234567890", "Desarrollo de Software");
-
-    Estudiantes estudiantes1 =
-            new Estudiantes ( "Isacc", "987463210", "Desarrollo de Software");
-
-    pilaEstudiantes.push(estudiantes);
-    pilaEstudiantes.push(estudiantes1);
-
-    System.out.println(pilaEstudiantes.size());
-    Queue colaEstuduiantes = new LinkedList();
+    Pacientes paciente =
+            new paciente("Carlos", "123456789", "67kg", "1.78cm");
+    Pacientes paciente1 =
+            new paciente1("Marco", "1214156783", "78kg", "188cm");
 
 
-    IO.println(estudiantes.toString());
-    IO.println(estudiantes1.toString());
 
-    System.out.println(colaEstuduiantes.size());
+    colaPacientes.add(paciente);
+    colaPacientes.add(paciente1);
+    System.out.println(colaPacientes.size());
+
+    IO.println(paciente.toString());
+    IO.println(paciente1.toString());
 
 }
